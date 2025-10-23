@@ -177,6 +177,7 @@ Material:
     - _IntersectionFoamOn: 1
     - _IntersectionLength: 1.98
     - _IntersectionRippleDist: 1
+    - _IntersectionRippleSpeed: 2
     - _IntersectionRippleStrength: 0
     - _IntersectionSharp: 1
     - _IntersectionSource: 0
@@ -254,8 +255,8 @@ Material:
     - _VertexColorWaveFlattening: 0
     - _WaveDistance: 0.574
     - _WaveFrequency: 1
-    - _WaveHeight: 1
-    - _WaveMaxLayers: 64
+    - _WaveHeight: 0.367
+    - _WaveMaxLayers: 1
     - _WaveNormalStr: 0
     - _WaveSpeed: 1
     - _WaveSteepness: 5
