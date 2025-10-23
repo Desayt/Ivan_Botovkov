@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7ec8000e8364fff4abf8f185f95e687f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 129321
+  packageName: Mirror
+  packageVersion: 96.0.1
+  assetPath: Assets/Mirror/Examples/TankTheftAuto/Prefabs/TankReliable.prefab
+  uploadId: 736421
