@@ -181,7 +181,7 @@ Material:
     - _IntersectionRippleStrength: 0
     - _IntersectionSharp: 1
     - _IntersectionSource: 0
-    - _IntersectionSpeed: 0.1
+    - _IntersectionSpeed: 0.03
     - _IntersectionStyle: 1
     - _IntersectionTiling: 0.09999993
     - _LightingOn: 1
@@ -255,10 +255,10 @@ Material:
     - _VertexColorWaveFlattening: 0
     - _WaveDistance: 0.574
     - _WaveFrequency: 1
-    - _WaveHeight: 0.367
+    - _WaveHeight: 0.13
     - _WaveMaxLayers: 1
     - _WaveNormalStr: 0
-    - _WaveSpeed: 1
+    - _WaveSpeed: 0.5
     - _WaveSteepness: 5
     - _WaveTint: 0
     - _WavesOn: 1
