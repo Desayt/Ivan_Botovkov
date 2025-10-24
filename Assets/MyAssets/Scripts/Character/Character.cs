@@ -133,7 +133,7 @@ public class Character : NetworkBehaviour, ISelectable, IDamageable, IDamageDeal
                 _isDead = true;
                 Health = 0;
                 Died?.Invoke(damage);
-                RpcDied();
+                RpcDied(damage.Value, damage.Damageable.Self, damage.DamageDealer.Self);
             }
             DamageTaked?.Invoke(this, damage.Value);
             RpcDamageTaked(damage.Value);
@@ -355,8 +355,16 @@ public class Character : NetworkBehaviour, ISelectable, IDamageable, IDamageDeal
     }
 
     [ClientRpc]
-    private void RpcDied()
+    private void RpcDied(float value, GameObject damageable, GameObject damageDealer)
     {
+        Damage damage = new()
+        {
+            Value = value,
+            Damageable = damageable.GetComponent<IDamageable>(),
+            DamageDealer = damageDealer.GetComponent<IDamageDealer>(),
+        };
+
+        Died?.Invoke(damage);
         CharacterDied?.Invoke(this);
         _animator.SetTrigger("Die");
         _netAnimator.SetTrigger("Die");
